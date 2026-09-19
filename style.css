@@ -31,7 +31,7 @@ body {
     background: #1b3b6b;
     width: 90%;
     height: 90px;
-    margin: 0 auto; /* moved up */
+    margin: 0 auto;
     box-shadow: 0 0 20px #000;
     border-radius: 0 0 10px 10px;
     display: flex;
@@ -66,7 +66,7 @@ body {
     box-shadow: 0 0 20px #000;
     padding: 25px;
     width: 28%;
-    min-height: 1700px; /* expanded left panel */
+    min-height: 1700px;
     color: white;
 }
 
@@ -155,6 +155,12 @@ li {
 
 /* Tools list */
 .tool-list li {
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+/* Safety equipment list */
+.safety-list li {
     margin-bottom: 15px;
     line-height: 1.4;
 }
