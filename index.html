@@ -16,7 +16,7 @@
             <h2>Chemicals Firefighters Face</h2>
 
             <div class="chemical">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/WHMIS_Exclamation_Mark.svg" alt="Irritant" class="whmis">
+                <div class="symbol irritant"></div>
                 <div class="info">
                     <strong>Smoke (particulates)</strong><br>
                     Respiratory irritation, long-term lung damage
@@ -24,7 +24,7 @@
             </div>
 
             <div class="chemical">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/WHMIS_Health_Hazard.svg" alt="Health Hazard" class="whmis">
+                <div class="symbol health"></div>
                 <div class="info">
                     <strong>Carbon Monoxide (CO)</strong><br>
                     Reduces oxygen in blood, can cause death
@@ -32,7 +32,7 @@
             </div>
 
             <div class="chemical">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/WHMIS_Skull_and_Crossbones.svg" alt="Poison" class="whmis">
+                <div class="symbol poison"></div>
                 <div class="info">
                     <strong>Hydrogen Cyanide (HCN)</strong><br>
                     Blocks cellular oxygen use, highly toxic
@@ -40,7 +40,7 @@
             </div>
 
             <div class="chemical">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/WHMIS_Corrosive.svg" alt="Corrosive" class="whmis">
+                <div class="symbol corrosive"></div>
                 <div class="info">
                     <strong>Water</strong><br>
                     Slips, electrical hazards, steam burns
@@ -48,7 +48,7 @@
             </div>
 
             <div class="chemical">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/WHMIS_Biohazard.svg" alt="Biohazard" class="whmis">
+                <div class="symbol biohazard"></div>
                 <div class="info">
                     <strong>Blood</strong><br>
                     Biological hazard, infection risk
@@ -67,7 +67,9 @@
         </div>
 
         <!-- Middle Panel -->
-        <div id="middle"></div>
+        <div id="middle">
+            <canvas id="scene"></canvas>
+        </div>
 
         <!-- Right Panel -->
         <div class="panel" id="right">
@@ -96,5 +98,6 @@
         </div>
     </div>
 
+    <script src="poster-scene.js"></script>
 </body>
 </html>
