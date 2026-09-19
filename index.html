@@ -7,94 +7,110 @@
 </head>
 <body>
 
-    <div id="poster">
+    <div id="page">
         <!-- Title -->
         <div id="title">Firefighting Safety</div>
 
-        <!-- Left Panel -->
-        <div class="panel" id="left">
-            <h2>Chemicals Firefighters Face</h2>
+        <!-- Main row under title -->
+        <div id="row">
+            <!-- Left Panel -->
+            <div class="panel" id="left">
+                <h2>Chemicals Firefighters Face</h2>
 
-            <div class="chemical">
-                <div class="symbol irritant"></div>
-                <div class="info">
-                    <strong>Smoke (particulates)</strong><br>
-                    Respiratory irritation, long-term lung damage
+                <div class="chemical">
+                    <div class="whmis diamond irritant">
+                        <span>!</span>
+                    </div>
+                    <div class="info">
+                        <strong>Smoke (particulates)</strong><br>
+                        Respiratory irritation, long-term lung damage
+                    </div>
                 </div>
+
+                <div class="chemical">
+                    <div class="whmis diamond health">
+                        <span>☣</span>
+                    </div>
+                    <div class="info">
+                        <strong>Carbon Monoxide</strong><br>
+                        Reduces oxygen in blood, can cause death
+                    </div>
+                </div>
+
+                <div class="chemical">
+                    <div class="whmis diamond poison">
+                        <span>☠</span>
+                    </div>
+                    <div class="info">
+                        <strong>Hydrogen Cyanide</strong><br>
+                        Blocks cellular oxygen use, highly toxic
+                    </div>
+                </div>
+
+                <div class="chemical">
+                    <div class="whmis diamond corrosive">
+                        <span>⚗</span>
+                    </div>
+                    <div class="info">
+                        <strong>Water</strong><br>
+                        Slips, electrical hazards, steam burns
+                    </div>
+                </div>
+
+                <div class="chemical">
+                    <div class="whmis diamond biohazard">
+                        <span>☣</span>
+                    </div>
+                    <div class="info">
+                        <strong>Blood</strong><br>
+                        Biological hazard, infection risk
+                    </div>
+                </div>
+
+                <h2>How to Stay Safe</h2>
+                <ul>
+                    <li>Wear SCBA to avoid toxic gases.</li>
+                    <li>Use full turnout gear.</li>
+                    <li>Use medical gloves and face shields.</li>
+                    <li>Decontaminate gear after exposure.</li>
+                    <li>Follow WHMIS training.</li>
+                    <li>Limit time in smoke-heavy areas.</li>
+                </ul>
             </div>
 
-            <div class="chemical">
-                <div class="symbol health"></div>
-                <div class="info">
-                    <strong>Carbon Monoxide (CO)</strong><br>
-                    Reduces oxygen in blood, can cause death
-                </div>
+            <!-- Middle Panel (scene) -->
+            <div id="middle">
+                <canvas id="scene"></canvas>
             </div>
 
-            <div class="chemical">
-                <div class="symbol poison"></div>
-                <div class="info">
-                    <strong>Hydrogen Cyanide (HCN)</strong><br>
-                    Blocks cellular oxygen use, highly toxic
-                </div>
+            <!-- Right Panel -->
+            <div class="panel" id="right">
+                <h2>Hazards & Protection</h2>
+                <p>
+                    Firefighters face dangerous chemicals, heat, smoke, and toxic environments.
+                    Proper equipment and safety systems reduce exposure and injury risk.
+                </p>
+
+                <h2>Safety Equipment</h2>
+                <ul>
+                    <li>Helmet</li>
+                    <li>Turnout/Bunker Gear</li>
+                    <li>Gloves</li>
+                    <li>Boots</li>
+                    <li>SCBA</li>
+                    <li>Eye Protection</li>
+                </ul>
+
+                <h2>Other Safety Systems</h2>
+                <ul>
+                    <li>Eye-wash stations</li>
+                    <li>Emergency showers</li>
+                    <li>Medical monitoring</li>
+                    <li>Rehab areas</li>
+                    <li>Decontamination lines</li>
+                    <li>Communication systems</li>
+                </ul>
             </div>
-
-            <div class="chemical">
-                <div class="symbol corrosive"></div>
-                <div class="info">
-                    <strong>Water</strong><br>
-                    Slips, electrical hazards, steam burns
-                </div>
-            </div>
-
-            <div class="chemical">
-                <div class="symbol biohazard"></div>
-                <div class="info">
-                    <strong>Blood</strong><br>
-                    Biological hazard, infection risk
-                </div>
-            </div>
-
-            <h2>How to Stay Safe</h2>
-            <ul>
-                <li>Wear SCBA to avoid toxic gases.</li>
-                <li>Use full turnout gear.</li>
-                <li>Use medical gloves and face shields.</li>
-                <li>Decontaminate gear after exposure.</li>
-                <li>Follow WHMIS training.</li>
-                <li>Limit time in smoke-heavy areas.</li>
-            </ul>
-        </div>
-
-        <!-- Middle Panel -->
-        <div id="middle">
-            <canvas id="scene"></canvas>
-        </div>
-
-        <!-- Right Panel -->
-        <div class="panel" id="right">
-            <h2>Hazards & Protection</h2>
-            <p>Firefighters face dangerous chemicals, heat, smoke, and toxic environments. Proper equipment and safety systems reduce exposure and injury risk.</p>
-
-            <h2>Safety Equipment</h2>
-            <ul>
-                <li>Helmet</li>
-                <li>Turnout/Bunker Gear</li>
-                <li>Gloves</li>
-                <li>Boots</li>
-                <li>SCBA</li>
-                <li>Eye Protection</li>
-            </ul>
-
-            <h2>Other Safety Systems</h2>
-            <ul>
-                <li>Eye-wash stations</li>
-                <li>Emergency showers</li>
-                <li>Medical monitoring</li>
-                <li>Rehab areas</li>
-                <li>Decontamination lines</li>
-                <li>Communication systems</li>
-            </ul>
         </div>
     </div>
 
