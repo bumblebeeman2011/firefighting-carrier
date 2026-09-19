@@ -5,43 +5,58 @@ body {
     color: white;
 }
 
+/* Poster container ensures black surrounds everything */
+#poster {
+    background: black;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Title bar */
 #title {
     background: #1b3b6b;
     color: white;
     text-align: center;
+    width: 100%;
     padding: 40px 0;
     font-size: 48px;
     font-weight: bold;
-    border-bottom: 5px solid black;
-}
-
-#poster {
-    display: flex;
-    justify-content: space-between;
-    padding: 40px;
-    height: 1200px; /* extended height for poster look */
-    background: black;
-}
-
-.panel {
-    background: #2b2b2b;
-    width: 30%;
-    padding: 25px;
-    border-radius: 10px;
+    margin-bottom: 40px;
     box-shadow: 0 0 20px #000;
 }
 
-#middle {
+/* Panels layout */
+.panel {
+    background: #2b2b2b;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #000;
+    padding: 25px;
     width: 30%;
-    background: black; /* empty black middle */
+    min-height: 1000px;
 }
 
+/* Three-column layout */
+#poster {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Middle panel stays black */
+#middle {
+    width: 30%;
+    background: black;
+}
+
+/* Headings */
 h2 {
     color: white;
     border-bottom: 2px solid #1b3b6b;
     padding-bottom: 5px;
 }
 
+/* Chemical list */
 .chemical {
     display: flex;
     align-items: center;
