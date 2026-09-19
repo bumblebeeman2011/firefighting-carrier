@@ -30,8 +30,8 @@ body {
 #bottom-bar {
     background: #1b3b6b;
     width: 90%;
-    height: 70px;
-    margin: 10px auto 0 auto; /* moved up slightly more */
+    height: 80px;
+    margin: 5px auto 0 auto; /* moved up a tiny bit more */
     box-shadow: 0 0 20px #000;
     border-radius: 0 0 10px 10px;
     display: flex;
@@ -42,10 +42,12 @@ body {
 /* Bottom bar text */
 #bottom-text {
     color: white;
-    font-size: 32px;
+    font-size: 40px;          /* bigger */
     font-weight: bold;
-    letter-spacing: 3px;
-    text-shadow: 2px 2px 4px #000;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 6px #000;
+    font-family: "Georgia", "Times New Roman", cursive; /* fancy style */
+    text-align: center;
 }
 
 /* Row layout */
@@ -64,7 +66,7 @@ body {
     box-shadow: 0 0 20px #000;
     padding: 25px;
     width: 28%;
-    min-height: 1200px;
+    min-height: 1350px; /* expanded to fit added content */
     color: white;
 }
 
@@ -141,8 +143,8 @@ h2 {
 .irritant { border-color: orange; }
 .health { border-color: purple; }
 .poison { border-color: red; }
-.corrosive { border-color: gray; }
-.biohazard { border-color: yellow; }
+corrosive { border-color: gray; }
+biohazard { border-color: yellow; }
 
 /* Lists */
 ul {
@@ -151,4 +153,9 @@ ul {
 
 li {
     margin-bottom: 8px;
+}
+
+/* Firetruck list spacing */
+.truck-list li {
+    margin-bottom: 10px;
 }
