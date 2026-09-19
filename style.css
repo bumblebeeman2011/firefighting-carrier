@@ -30,10 +30,22 @@ body {
 #bottom-bar {
     background: #1b3b6b;
     width: 90%;
-    height: 60px;
-    margin: 20px auto 0 auto; /* moved up more */
+    height: 70px;
+    margin: 10px auto 0 auto; /* moved up slightly more */
     box-shadow: 0 0 20px #000;
     border-radius: 0 0 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Bottom bar text */
+#bottom-text {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px #000;
 }
 
 /* Row layout */
@@ -71,7 +83,7 @@ body {
 
 /* Mini title above image */
 #mini-title {
-    font-size: 42px; /* larger */
+    font-size: 42px;
     font-weight: bold;
     color: #1b3b6b;
     margin-bottom: 25px;
