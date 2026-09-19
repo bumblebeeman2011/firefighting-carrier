@@ -5,10 +5,11 @@ body {
     color: white;
 }
 
+/* Expand the page height for more space */
 #page {
     background: black;
-    min-height: 1200px;
-    padding-top: 20px;
+    min-height: 1600px; /* increased from 1200px */
+    padding-top: 200px; /* moves everything down together */
 }
 
 /* Title bar */
@@ -16,9 +17,9 @@ body {
     background: #1b3b6b;
     color: white;
     text-align: center;
-    width: 90%; /* perfectly aligned with panels */
+    width: 90%;
     margin: 0 auto;
-    padding: 40px 0; /* slightly taller to align with panels */
+    padding: 40px 0;
     font-size: 48px;
     font-weight: bold;
     box-shadow: 0 0 20px #000;
@@ -30,7 +31,7 @@ body {
     justify-content: space-between;
     width: 90%;
     margin: 0 auto;
-    margin-top: -5px; /* moves panels up to touch title */
+    margin-top: -5px;
 }
 
 /* Panels */
@@ -43,10 +44,22 @@ body {
     min-height: 900px;
 }
 
-/* Middle panel (empty for now) */
+/* Middle panel */
 #middle {
     width: 30%;
     background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Image styling */
+#fire-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 25px #000;
+    display: block;
 }
 
 /* Headings */
