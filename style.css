@@ -12,27 +12,34 @@ body {
     padding: 40px 0;
     font-size: 48px;
     font-weight: bold;
+    border-bottom: 5px solid black;
 }
 
-#container {
+#poster {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 40px;
+    height: 1200px; /* extended height for poster look */
+    background: black;
 }
 
 .panel {
     background: #2b2b2b;
     width: 30%;
-    padding: 20px;
+    padding: 25px;
     border-radius: 10px;
+    box-shadow: 0 0 20px #000;
 }
 
 #middle {
     width: 30%;
-    background: #111;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
+    background: black; /* empty black middle */
+}
+
+h2 {
+    color: white;
+    border-bottom: 2px solid #1b3b6b;
+    padding-bottom: 5px;
 }
 
 .chemical {
@@ -41,37 +48,16 @@ body {
     margin-bottom: 15px;
 }
 
-.symbol {
+.whmis {
     width: 40px;
     height: 40px;
-    border: 2px solid yellow;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-right: 10px;
-    font-weight: bold;
 }
 
-.visual {
-    width: 60px;
-    height: 60px;
-    margin: 10px auto;
+ul {
+    margin-left: 20px;
 }
 
-/* Flame */
-.flame {
-    background: #cc3333;
-    clip-path: polygon(50% 0%, 65% 30%, 80% 60%, 50% 100%, 20% 60%, 35% 30%);
-}
-
-/* Water droplet */
-.droplet {
-    background: #3399ff;
-    clip-path: ellipse(50% 70% at 50% 50%);
-}
-
-/* Shield */
-.shield {
-    background: #ff8c00;
-    clip-path: polygon(50% 0%, 80% 20%, 80% 60%, 50% 100%, 20% 60%, 20% 20%);
+li {
+    margin-bottom: 8px;
 }
