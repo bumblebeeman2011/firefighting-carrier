@@ -31,7 +31,7 @@ body {
     background: #1b3b6b;
     width: 90%;
     height: 60px;
-    margin: 40px auto 0 auto; /* moved up slightly */
+    margin: 20px auto 0 auto; /* moved up more */
     box-shadow: 0 0 20px #000;
     border-radius: 0 0 10px 10px;
 }
@@ -71,7 +71,7 @@ body {
 
 /* Mini title above image */
 #mini-title {
-    font-size: 36px;
+    font-size: 42px; /* larger */
     font-weight: bold;
     color: #1b3b6b;
     margin-bottom: 25px;
