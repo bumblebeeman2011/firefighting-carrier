@@ -5,32 +5,32 @@ body {
     color: white;
 }
 
-/* Whole page */
 #page {
     background: black;
     min-height: 1200px;
-    padding: 40px 0;
+    padding-top: 20px;
 }
 
-/* Title bar at top, with black above and sides */
+/* Title bar */
 #title {
     background: #1b3b6b;
     color: white;
     text-align: center;
-    width: 80%;
-    margin: 0 auto 30px auto; /* centered, with black on sides and above */
+    width: 90%; /* extended width */
+    margin: 0 auto 0 auto;
     padding: 30px 0;
     font-size: 48px;
     font-weight: bold;
     box-shadow: 0 0 20px #000;
 }
 
-/* Row directly under title: left, middle, right */
+/* Row directly under title */
 #row {
     display: flex;
     justify-content: space-between;
     width: 90%;
     margin: 0 auto;
+    margin-top: -10px; /* move panels up to touch title */
 }
 
 /* Panels */
@@ -64,10 +64,9 @@ h2 {
     color: white;
     border-bottom: 2px solid #1b3b6b;
     padding-bottom: 5px;
-    margin-top: 10px;
 }
 
-/* Chemical list */
+/* WHMIS diamond symbols */
 .chemical {
     display: flex;
     align-items: center;
@@ -86,7 +85,6 @@ h2 {
     font-size: 20px;
 }
 
-/* Diamond shape for WHMIS */
 .diamond {
     background: white;
     transform: rotate(45deg);
@@ -97,7 +95,6 @@ h2 {
     transform: rotate(-45deg);
 }
 
-/* Different colors for types */
 .irritant { border-color: orange; }
 .health { border-color: purple; }
 .poison { border-color: red; }
