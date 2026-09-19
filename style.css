@@ -1,0 +1,77 @@
+body {
+    background: black;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+#title {
+    background: #1b3b6b;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+#container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.panel {
+    background: #2b2b2b;
+    width: 30%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#middle {
+    width: 30%;
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.chemical {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.symbol {
+    width: 40px;
+    height: 40px;
+    border: 2px solid yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.visual {
+    width: 60px;
+    height: 60px;
+    margin: 10px auto;
+}
+
+/* Flame */
+.flame {
+    background: #cc3333;
+    clip-path: polygon(50% 0%, 65% 30%, 80% 60%, 50% 100%, 20% 60%, 35% 30%);
+}
+
+/* Water droplet */
+.droplet {
+    background: #3399ff;
+    clip-path: ellipse(50% 70% at 50% 50%);
+}
+
+/* Shield */
+.shield {
+    background: #ff8c00;
+    clip-path: polygon(50% 0%, 80% 20%, 80% 60%, 50% 100%, 20% 60%, 20% 20%);
+}
